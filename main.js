@@ -1,3 +1,5 @@
+// VERSION 1
+
 function openHamburger() {
     $(".hamburger-menu").addClass("active");
 }
@@ -7,8 +9,20 @@ function closeHamburger() {
 }
 
 function init() {
-    $('.header-right i.fa-bars').click(openHamburger);
-    $(".hamburger-menu a.close").click(closeHamburger);
+
+    $(".fa-bars").click(openHamburger);
+    $(".fa-times").click(closeHamburger);
 }
+
+
+// // VERSION 2
+// function hamburgerMenu() {
+//     $(".hamburger-menu").toggleClass("active");
+// }
+
+// function init() {
+
+//     $(".fa-bars, .fa-times").click(hamburgerMenu);
+// }
 
 init();
